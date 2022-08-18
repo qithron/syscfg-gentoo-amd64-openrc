@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#env | grep EBUILD
+#if [ "$EBUILD_PHASE" = 'setup' ]; then
+#	[ -f '/tmp/timeit' ] || touch '/tmp/timeit'
+#elif [ "$EBUILD_PHASE" = 'pkg_setup' ]; then
+#	echo pkg_setup >> '/tmp/timeit'
+#elif [ "$EBUILD_PHASE" = 'post_install' ]; then
+#	echo post_install >> '/tmp/timeit'
+#fi

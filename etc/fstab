@@ -1,0 +1,8 @@
+/dev/sdb4          /           ext4  defaults 0 1
+tmpfs              /var/tmp    tmpfs auto,size=50% 0 0
+
+/dev/sdb3          /boot       ext4  defaults 0 0
+/dev/sda1          /mnt/a      btrfs defaults,noauto 0 0
+/dev/sdb2          /mnt/b      btrfs defaults 0 0
+
+/mnt/b/home/gentoo /home       none  bind 0 0

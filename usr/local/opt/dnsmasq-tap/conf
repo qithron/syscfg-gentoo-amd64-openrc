@@ -1,0 +1,18 @@
+# vim: syn=dnsmasq
+
+user=dnsmasq
+#keep-in-foreground
+
+pid-file       = /usr/local/opt/dnsmasq-tap/pid
+log-facility   = /usr/local/opt/dnsmasq-tap/log
+dhcp-leasefile = /usr/local/opt/dnsmasq-tap/leases
+
+interface = tap0
+bind-interfaces
+
+#enable-tftp
+#tftp-root=/mnt/boot/metboot
+#dhcp-boot=/mnt/boot/netboot/pxe
+
+dhcp-range = 192.168.172.10, 192.168.172.254, 255.255.255.0, 30m
+
