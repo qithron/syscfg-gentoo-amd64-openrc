@@ -1,0 +1,7 @@
+x11-terms/st
+x11-wm/dwm
+
+dev-lang/rust
+www-client/brave-bin
+www-client/firefox
+app-editors/vim-core

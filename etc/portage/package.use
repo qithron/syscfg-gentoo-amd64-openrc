@@ -1,0 +1,151 @@
+# basic
+sys-kernel/gentoo-sources symlink
+app-arch/lzop
+sys-kernel/linux-firmware initramfs savedconfig
+net-wireless/wireless-regdb
+sys-boot/efibootmgr
+
+# ntp
+net-misc/chrony
+
+# portage
+app-portage/gentoolkit
+app-portage/elicense
+app-portage/euses
+app-portage/esearch
+
+# shells
+app-shells/bash-completion
+app-shells/fish
+app-shells/dash
+
+# fs
+sys-fs/btrfs-progs
+sys-fs/android-file-transfer-linux fuse
+#sys-fs/ntfs3g
+#sys-fs/dosfstools
+#sys-fs/exfatprogs
+
+# utils
+sys-boot/grub -themes
+app-admin/doas pam persist
+dev-vcs/git
+media-sound/alsa-utils -libsamplerate
+sys-apps/hdparm
+net-wireless/iw
+sys-process/lsof -ipv6
+sys-power/acpi
+dev-util/checkbashisms
+dev-util/shellcheck-bin
+dev-lua/luacheck
+
+# info utils
+net-p2p/torrentinfo
+media-video/mediainfo
+
+# archive
+app-arch/unrar
+
+# net
+net-misc/dhcpcd
+net-dns/dnsmasq -dumpfile dnssec tftp
+net-misc/openssh
+net-fs/sshfs
+#net-ftp/vsftpd
+
+# python
+dev-lang/python tk
+dev-python/python-docs
+dev-python/pillow xcb
+dev-python/pylint
+
+# rust
+dev-lang/rust-bin rustfmt clippy
+
+# console apps
+app-editors/neovim
+app-misc/ranger
+media-gfx/ueberzug
+sys-process/htop
+app-misc/cmatrix
+app-misc/neofetch
+app-admin/pass dmenu -git
+www-client/w3m fbcon
+
+# x11 - x server and utils
+x11-base/xorg-server suid xorg -unwind -xcsecurity -xephyr -xnest -xvfb
+x11-drivers/xf86-video-intel
+x11-misc/xwallpaper
+x11-apps/xrandr
+x11-apps/xbacklight
+x11-misc/xcompmgr
+x11-misc/picom
+x11-apps/xclipboard
+x11-misc/xclip
+x11-apps/xev
+
+# window manager and related
+x11-wm/dwm savedconfig
+x11-wm/bspwm
+x11-misc/sxhkd
+x11-misc/dmenu savedconfig
+x11-misc/unclutter
+x11-misc/nitrogen
+x11-misc/slock savedconfig
+x11-terms/st savedconfig
+
+# fonts
+media-fonts/fantasque-sans-mono
+media-fonts/ubuntu-font-family
+
+# gui apps and related
+media-video/ffmpeg libass libcaca mp3 opus svg vorbis webp x264 x265 fontconfig
+media-video/ffmpeg cpudetection v4l
+media-video/mpv tools -lua
+media-gfx/imagemagick png jpeg svg tiff webp xml
+media-gfx/imagemagick corefont truetype fontconfig
+media-video/obs-studio alsa v4l -ssl
+media-video/v4l2loopback
+media-tv/v4l-utils
+media-gfx/sxiv jpeg png gif webp exif savedconfig
+media-gfx/inkscape
+media-gfx/gimp
+media-video/mkvtoolnix gui
+media-video/aegisub -fftw
+net-p2p/qbittorrent gui webui
+net-misc/tigervnc
+www-client/firefox
+app-emulation/qemu gtk
+sys-apps/flatpak
+app-office/libreoffice-bin
+kde-apps/kdenlive
+
+# dependencies ################################################################
+
+# app-admin/pass
+media-gfx/qrencode png
+# media-libs/utils
+media-libs/libv4l jpeg
+# media-video/aegisub
+dev-lang/luajit lua52compat
+x11-libs/wxGTK opengl
+dev-libs/boost icu
+# media-gfx/gimp
+app-text/poppler cairo
+media-libs/gegl cairo
+# brave-bin
+app-text/ghostscript-gpl cups
+app-text/xmlto text
+# www-client/firefox
+media-libs/libvpx postproc
+# app-shells/fish
+dev-libs/libpcre2 pcre32
+# kde-apps/kdenlive
+media-libs/mlt ffmpeg frei0r qt5 sdl xml
+media-video/ffmpeg sdl
+media-libs/libsdl2 opengl
+media-libs/opencv contrib contribdnn
+dev-qt/qtcore icu
+# app-office/libreoffice-bin
+media-libs/harfbuzz icu
+dev-libs/xmlsec nss
